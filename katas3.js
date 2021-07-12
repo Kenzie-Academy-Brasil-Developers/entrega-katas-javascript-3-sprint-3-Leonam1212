@@ -19,7 +19,7 @@ function kata1() {
     for(let i = 1; i<=25; i++) {
         arr.push(i) 
     }
-    showResults(`KATA 1 : ${arr}`)
+    showResults(`KATA 1 : [ ${arr} ]`)
 }
 
 kata1()
@@ -31,7 +31,7 @@ function kata2() {
     for (let i = 25; i>0; i--){
         arr.push(i)
     }
-    showResults(`KATA 2 : ${arr}`)
+    showResults(`KATA 2 : [ ${arr} ]`)
 }
 kata2()
 
@@ -43,7 +43,7 @@ function kata3() {
     for (let i = 1; i <= 25; i++){
         arr.push(i*-1)
     }
-    showResults(`KATA 3 : ${arr}`) 
+    showResults(`KATA 3 : [ ${arr} ]`) 
 }
 
 kata3()
@@ -54,7 +54,7 @@ function kata4() {
    for (let i = 25; i>0; i--){
        arr.push(i*-1)
    }
-   showResults(`KATA 4 : ${arr}`)
+   showResults(`KATA 4 : [ ${arr} ]`)
 }
 kata4()
 
@@ -69,7 +69,7 @@ function kata5() {
         }
         
     }
-    showResults(`KATA 5 : ${arr}`)
+    showResults(`KATA 5 : [ ${arr} ]`)
 }
 kata5()
 
