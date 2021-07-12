@@ -2,9 +2,10 @@ const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 39
 
 
 function showResults (n) {
+
 const main = document.body
 const paragraph = document.createElement('p')
-const value = document.createTextNode(n)
+const value = document.createTextNode(`${n}`)
 main.appendChild(paragraph)
 paragraph.appendChild(value)
 }
@@ -18,7 +19,7 @@ function kata1() {
     for(let i = 1; i<=25; i++) {
         arr.push(i) 
     }
-    showResults(arr)
+    showResults(`KATA 1 : ${arr}`)
 }
 
 kata1()
@@ -30,7 +31,7 @@ function kata2() {
     for (let i = 25; i>0; i--){
         arr.push(i)
     }
-    showResults(arr)
+    showResults(`KATA 2 : ${arr}`)
 }
 kata2()
 
@@ -42,7 +43,7 @@ function kata3() {
     for (let i = 1; i <= 25; i++){
         arr.push(i*-1)
     }
-    showResults(arr) 
+    showResults(`KATA 3 : ${arr}`) 
 }
 
 kata3()
@@ -53,7 +54,7 @@ function kata4() {
    for (let i = 25; i>0; i--){
        arr.push(i*-1)
    }
-   showResults(arr)
+   showResults(`KATA 4 : ${arr}`)
 }
 kata4()
 
@@ -68,7 +69,7 @@ function kata5() {
         }
         
     }
-    showResults(arr)
+    showResults(`KATA 5 : ${arr}`)
 }
 kata5()
 
@@ -80,7 +81,7 @@ function kata6() {
             arr.push(i)
         }
     }
-    showResults(arr)
+    showResults(`KATA 6 : [ ${arr} ]`)
 
 }
 kata6()
@@ -95,7 +96,7 @@ function kata7() {
             arr.push(i)
         }
     }
-    showResults(arr)
+    showResults(`KATA 7 : [ ${arr} ]`)
 }
 kata7()
 
@@ -110,7 +111,7 @@ function kata8() {
             arr.push(i)
         }   
     }
-    showResults(arr)
+    showResults(`KATA 8 : [ ${arr} ]`)
 }
 kata8()
 
@@ -123,13 +124,13 @@ function kata9() {
         arr.push(i)
        }
     }
-    showResults(arr)
+    showResults(`KATA 9 : [ ${arr} ]`)
 }
 kata9()
 
 //KATA 10 - EXIBIR OS 20 VALORES DO SAMPLEARRAY
 function kata10() {
-    showResults(sampleArray) 
+    showResults(`KATA 10 : [ ${sampleArray} ]`) 
 }
 kata10()
 
@@ -141,7 +142,7 @@ for(let i = 0; i<sampleArray.length; i++) {
         arr.push(sampleArray[i])
     }
 }
-showResults(arr)
+showResults(`KATA 11 : [ ${arr} ]`)
   
 }
 kata11()
@@ -158,7 +159,7 @@ for(let i = 0; i<sampleArray.length; i++) {
         arr.push(sampleArray[i])
     }
 }
-showResults(arr)
+showResults(`KATA 12 : [ ${arr} ]`)
   
 }
 kata12()
@@ -172,7 +173,7 @@ function kata13() {
             arr.push(sampleArray[i])
         }
     }
-    showResults(arr)
+    showResults(`KATA 13 : [ ${arr} ]`)
 }
 kata13()
 
@@ -183,7 +184,7 @@ function kata14() {
     for(let i = 0; i<sampleArray.length; i++) {
       arr.push(sampleArray[i]**2)
     }
-    showResults(arr)
+    showResults(`KATA 14 : [ ${arr} ]`)
 }
 kata14()
 
@@ -196,7 +197,7 @@ function kata15() {
         result+=i;
         i++
     }
-    showResults(result)
+    showResults(`KATA 15 : [ ${result} ]`)
 }
 kata15()
 
@@ -209,7 +210,7 @@ let sum = 0;
 for(let i = 0; i<sampleArray.length; i++) {
        sum += sampleArray[i]
     }
-    showResults(sum)
+    showResults(`KATA 16 : [ ${sum} ]`)
 }
 kata16()
     
@@ -221,7 +222,7 @@ for(let i = 1; i < sampleArray.length; i++ ){
         min = sampleArray[i]
     }
 }
-showResults(min)
+showResults(`KATA 17 : [ ${min} ]`)
   
 }
 kata17()
@@ -236,7 +237,7 @@ for (let i = 1; i<sampleArray.length; i++){
     }
 }
 
-showResults(max)
+showResults(`KATA 18 : [ ${max} ]`)
 }
 kata18()
 
@@ -261,6 +262,9 @@ function kataBonus1() {
   for (let i = 1; i<=20; i++){
       const main = document.body
       const element = document.createElement('div');
+      const title = document.createTextNode("Bonus#1");
+      element.style.color = "#D8BFD8"
+      element.appendChild(title)
       element.className = "box"
       element.style.width = 100 + "px"
       main.appendChild(element)
@@ -275,6 +279,10 @@ for (let i = 100; i<=200; i+=5){
 
     const main = document.body;
     const element = document.createElement('div');
+    const title = document.createTextNode("Bonus#2");
+    element.style.color = "#fff"
+    element.appendChild(title)
+    
     element.className = 'box-mod'
     element.style.width = i+5+'px'
     main.appendChild(element)
@@ -287,6 +295,9 @@ function kataBonus3() {
 
         const main = document.body
         const element = document.createElement('div');
+        const title = document.createTextNode("Bonus#3");
+        element.style.color = "#FFDAB9"
+        element.appendChild(title)
         element.className = "boxBonus3"
         element.style.width = sampleArray[i] + "px"
         main.appendChild(element)
@@ -301,6 +312,9 @@ function kataBonus4() {
 
         const main = document.body
         const element = document.createElement('div');
+        const title = document.createTextNode("Bonus#4");
+        element.style.color = "#FFFF00"
+        element.appendChild(title)
         element.className = "boxBonus3"
         element.style.width = sampleArray[i] + "px"
         main.appendChild(element)
@@ -319,6 +333,10 @@ function kataBonus5() {
 
         const main = document.body
         const element = document.createElement('div');
+        const title = document.createTextNode("Bonus#5");
+        element.style.color = "#fff"
+        element.appendChild(title)
+        
         element.className = "boxBonus3"
         element.style.width = sampleArray[i] + "px"
         main.appendChild(element)
